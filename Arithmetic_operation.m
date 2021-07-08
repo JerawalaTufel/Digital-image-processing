@@ -1,0 +1,12 @@
+   a=imread('1.jpg');
+ b=imread('3.jpg');
+ z=imadd(a,b);
+ y=imsubtract(a,b);
+ x=immultiply(a,b);
+ t=imdivide(a,b);
+ subplot(2,3,1),imshow(z),title('add');
+ subplot(2,3,2),imshow(y),title('sub');
+ subplot(2,3,3),imshow(x),title('mul');
+ subplot(2,3,4),imshow(t),title('div');
+ subplot(2,3,5),imshow(a),title('a image');
+  subplot(2,3,6),imshow(b),title('b image');

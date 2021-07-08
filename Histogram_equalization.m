@@ -1,0 +1,10 @@
+ a=imread('socity.png');
+ b=rgb2gray(a);
+  imhist(b);
+ d =  histeq(b);
+ subplot(2,2,1),imshow(b);
+ subplot(2,2,2),imhist(b);
+ subplot(2,2,1),imshow(b);
+ subplot(2,2,2),imhist(b);
+ subplot(2,2,3),imshow(d);   
+ subplot(2,2,4),imhist(d);
